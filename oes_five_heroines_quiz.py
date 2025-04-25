@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import time
 import pandas as pd
 import random
@@ -122,7 +123,22 @@ for key, default in {
 
 # ---- CONFIG ---- #
 st.set_page_config(page_title="OES Five Heroines Quiz", layout="centered")
-st.image("Images/banner.png", use_container_width=True)
+import os  # <-- Add this import at the top if you don't already have it
+
+
+# Paths
+main_banner = "Images/banner.png"
+default_banner = "default_banner.png"  # Backup image
+
+# Safe image loading
+if os.path.exists(main_banner):
+    st.image(main_banner, use_container_width=True)
+elif os.path.exists(default_banner):
+    st.image(default_banner, use_container_width=True)
+    st.warning(f"Main banner image not found. Displaying default image instead.")
+else:
+    st.error("No banner image available. Please upload 'Images/banner.png' or 'default_banner.png'.")
+
 st.title("⭐ Order of the Eastern Star - Five Heroines Quiz ⭐")
 st.image("Images/star_symbol.png", width=300)
 
