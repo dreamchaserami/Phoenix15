@@ -122,14 +122,15 @@ for key, default in {
 
 # ---- CONFIG ---- #
 st.set_page_config(page_title="OES Five Heroines Quiz", layout="centered")
-st.image("Images/banner.png", use_container_width=True)
+st.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images/banner.png", use_container_width=True)
 st.title("⭐ Order of the Eastern Star - Five Heroines Quiz ⭐")
-st.image("Images/star_symbol.png", width=300)
+st.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images/star_symbol.png", width=300)
+
 
 # ---- START FORM ---- #
 if not st.session_state.quiz_started:
     with st.form("start_form"):
-        st.sidebar.image("Images/phoenix_logo.png", use_column_width=True)
+      st.sidebar.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images/phoenix_logo.png", use_container_width=True)
         st.session_state.name = st.text_input("Enter your name:")
         st.session_state.heroine = st.selectbox("Select Heroines Point:", list(question_bank.keys()))
         access_code = st.text_input("Enter access code for selected heroine:")
