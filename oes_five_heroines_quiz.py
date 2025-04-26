@@ -130,11 +130,12 @@ st.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images
 # ---- START FORM ---- #
 if not st.session_state.quiz_started:
     with st.form("start_form"):
-      st.sidebar.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images/phoenix_logo.png", use_container_width=True)
+        st.sidebar.image("https://raw.githubusercontent.com/dreamchaserami/phoenix15/main/Images/phoenix_logo.png", use_container_width=True)
         st.session_state.name = st.text_input("Enter your name:")
         st.session_state.heroine = st.selectbox("Select Heroines Point:", list(question_bank.keys()))
         access_code = st.text_input("Enter access code for selected heroine:")
         start_clicked = st.form_submit_button("Start Quiz")
+
 
         if start_clicked and st.session_state.name:
             correct_code = access_codes.get(st.session_state.heroine)
