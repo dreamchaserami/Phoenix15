@@ -71,7 +71,7 @@ question_bank = {
     ],
 
     "Martha": [
-        {"question": "What color represents Martha?", "options": {"a": "Green", "b": "Blue", "c": "White", "d": "Red"}, "answer": "c", "explanation": "White represents purity and hope."},
+        {"question": "What color represents Martha?", "options": {"a": "Green", "b": "Blue", "c": "White", "d": "Red"}, "answer": "a", "explanation": "Green represents hope and immortality."},
         {"question": "Martha's story is mainly found in which Gospel?", "options": {"a": "Matthew", "b": "Luke", "c": "John", "d": "Mark"}, "answer": "c", "explanation": "Martha’s story appears in John."},
         {"question": "What is Martha’s main virtue?", "options": {"a": "Hospitality", "b": "Endurance in trial", "c": "Wisdom", "d": "Charity"}, "answer": "b", "explanation": "She teaches endurance during trials."},
         {"question": "Who was Martha’s brother?", "options": {"a": "Solomon", "b": "David", "c": "Lazarus", "d": "Aaron"}, "answer": "c", "explanation": "Lazarus was Martha's brother."},
