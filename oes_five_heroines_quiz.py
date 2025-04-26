@@ -162,7 +162,7 @@ elif not st.session_state.completed:
 
     selected = st.radio("Choose one:", list(question_set['options'].values()), index=None, key=f"q_{q_idx}")
 
-    time_limit = 45
+    time_limit = 30
     elapsed = int(time.time() - st.session_state.start_time)
     remaining = max(0, time_limit - elapsed)
     st.info(f"⏱️ Time remaining: {remaining} seconds")
